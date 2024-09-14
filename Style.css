@@ -60,7 +60,7 @@ header {
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background: url(../resources/wall2.jpg) no-repeat;
+  background: url(resources/wall2.jpg) no-repeat;
   background-size: contain;
   background-position: center;
   display: flex;
