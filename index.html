@@ -2,353 +2,537 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="Style.css" />
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Yasser EL-sayed Full Stack Developer</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="logo" href="#">Portfolio</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <nav
-            class="navbar collapse navbar-collapse"
-            id="navbarSupportedContent"
-          >
-            <a href="#home" style="--i: 1" class="active">Home</a>
-            <a href="#about" style="--i: 2">About</a>
-            <a href="#services" style="--i: 3">Services</a>
-            <a href="#skills" style="--i: 4">Skill</a>
-            <a href="#contact" style="--i: 5">Contact</a>
-          </nav>
-        </div>
-      </nav>
-      <!-- <a href="#" class="logo">Portfolio</a>
-      <nav class="navbar">
-        <a href="#home" style="--i: 1" class="active">Home</a>
-        <a href="#about" style="--i: 2">About</a>
-        <a href="#services" style="--i: 3">Skill</a>
-        <a href="#skills" style="--i: 4">Portfolio</a>
-        <a href="#contact" style="--i: 5">Contact</a>
-      </nav> -->
-    </header>
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Yasser ELsayed</h1>
-        <h3>And I'm a <span class="text"></span></h3>
-        <p>
-          I'm a Full stack Web Designer with extensive experience for over 2
-          years. <br />expertise is to create and design scalable web, Frontend
-          design , and many more....
-        </p>
-        <div class="home-sci">
-          <a href="#" style="--i: 7"><i class="bx bxl-facebook"></i></a>
-          <a href="#" style="--i: 8"><i class="bx bxl-instagram"></i></a>
-          <a href="https://wa.me/qr/2YL7752HVBYPF1" style="--i: 9"
-            ><i class="bx bxl-whatsapp"></i
-          ></a>
-          <a href="#" style="--i: 10"><i class="bx bxl-tiktok"></i></a>
-        </div>
-        <a href="#about" class="btn-box">More About Me</a>
-      </div>
-      <span class="home-imgHover"></span>
-    </section>
-    <section class="about" id="about">
-      <div class="row">
-        <div class="about-img col">
-          <img src="resources/ProfilePicture.png" alt="" />
-        </div>
-        <div class="about-text col">
-          <h2>About <span>Me</span></h2>
-          <h4>Full Stack Developer!</h4>
-          <p>
-            As a dedicated Full Stack Web Developer with two years of focused
-            experience in backend development using .NET technologies, I have
-            developed a solid expertise in creating dynamic, scalable web
-            applications. My experience spans the entire development lifecycle,
-            from designing and implementing robust backend systems with ASP.NET
-            Core and Entity Framework to integrating these systems with
-            user-friendly front-end interfaces. I excel in crafting efficient
-            APIs, optimizing database performance, and ensuring seamless
-            collaboration between front-end and back-end components. My hands-on
-            experience with modern frameworks and tools, coupled with a strong
-            problem-solving mindset, allows me to deliver high-quality solutions
-            that drive both user satisfaction and business success.
-          </p>
-          <a href="#services" class="btn-box">More About Me</a>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="services" id="services">
-        <div class="services-container">
-          <h1 class="sub-title">My <span>Services</span></h1>
-          <div class="services-list">
-            <div>
-              <i class="bx bx-code" style="color: #00eeff"></i>
 
-              <h2>Backend Services</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-                facere eaque mollitia fugit quo, unde hic fuga at delectus
-                nulla, beatae, magnam omnis animi. Dolore unde obcaecati ad
-                saepe illum.
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container d-flex flex-lg-column flex-row mx-0">
+        <a
+          class="navbar-brand mb-lg-4 d-flex flex-row-reverse align-items-center justify-content-end gap-3"
+          style="max-width: fit-content"
+          href="#"
+        >
+          <span class="h3 fw-bold d-block d-lg-none">Yasser El-Sayed</span>
+          <img
+            src="./assets/images/Yasser_Image.jpeg"
+            class="rounded-circle"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- //NAVBAR -->
+
+    <!-- CONTENT WRAPPER -->
+    <div id="content-wrapper">
+      <!-- HOME -->
+      <section id="home" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10">
+              <h1 class="display-4 fw-bold" data-aos="fade-up">
+                I'M A <span class="text-brand">FULL STACK DEVELOPER</span> FROM
+                Sohag, EG
+              </h1>
+              <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+                I am Yasser El-Sayed Abd El-fadile, Aspiring Full Stack Web
+                Developer skilled in .NET Framework, C#, ASP.NET, SQL Server,
+                Angular, and React.
               </p>
-              <a href="#" class="read">Learn more</a>
-            </div>
-
-            <div>
-              <i class="bx bx-crop" style="color: #00eeff"></i>
-
-              <h2>Web Design</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-                facere eaque mollitia fugit quo, unde hic fuga at delectus
-                nulla, beatae, magnam omnis animi. Dolore unde obcaecati ad
-                saepe illum.
-              </p>
-              <a href="#" class="read">Learn more</a>
-            </div>
-
-            <div>
-              <i class="bx bxl-apple" style="color: #00eeff"></i>
-
-              <h2>App Deployment</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-                facere eaque mollitia fugit quo, unde hic fuga at delectus
-                nulla, beatae, magnam omnis animi. Dolore unde obcaecati ad
-                saepe illum.
-              </p>
-              <a href="#" class="read">Learn more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <h1 class="sub-title">My <span>Skill</span></h1>
-    <section>
-      <div class="container1" id="skills">
-        <h1 class="heading1">Technical Skills</h1>
-        <div class="technical-bars">
-          <div class="bar">
-            <i class="bx bxl-html5" style="color: #c95d2e"></i>
-            <div class="info">
-              <span>HTML5</span>
-            </div>
-            <div class="progress-line html">
-              <span></span>
-            </div>
-          </div>
-
-          <div class="bar">
-            <i class="bx bxl-css3" style="color: #147bbc"></i>
-            <div class="info">
-              <span>CSS3</span>
-            </div>
-            <div class="progress-line css">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <i class="bx bxl-javascript" style="color: #b0bc1e"></i>
-            <div class="info">
-              <span>Javascript</span>
-            </div>
-            <div class="progress-line Javascript">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <i class="bx bx-code-block" style="color: #69bcbc"></i>
-            <div class="info">
-              <span>C#</span>
-            </div>
-            <div class="progress-line cSharp">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <i class="bx bxl-angular" style="color: #c32ec9"></i>
-            <div class="info">
-              <span>Angular</span>
-            </div>
-            <div class="progress-line Angular">
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container1">
-        <h1 class="heading1">Professional Skills</h1>
-        <div class="radial-bars">
-          <div class="radial-bars">
-            <svg x="0px" y="0px" viewBox="0 0 200 200">
-              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">90%</div>
-            <div class="text">Creativity</div>
-          </div>
-          <div class="radial-bars">
-            <svg x="0px" y="0px" viewBox="0 0 200 200">
-              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">60%</div>
-            <div class="text">Communication</div>
-          </div>
-          <div class="radial-bars">
-            <svg x="0px" y="0px" viewBox="0 0 200 200">
-              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-              <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">80%</div>
-            <div class="text">Problem Solving</div>
-          </div>
-          <div class="radial-bars">
-            <svg x="0px" y="0px" viewBox="0 0 200 200">
-              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-              <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">85%</div>
-            <div class="text">TeamWork</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="portfolio" id="project">
-        <div class="main-text" id="project1">
-          <h2>Latest <span>Project</span></h2>
-          <div class="portfolio-content">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-5 p-5">
-              <div class="row1 col">
-                <img src="resources/e-invoicing-1.png" alt="" />
-                <div class="layer">
-                  <h5>E-Invoicing Web App</h5>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nihil iure fuga autem laboriosam vero dolorum labore beatae
-                    accusantium ad voluptatibus, possimus, nesciunt quibusdam
-                    adipisci minus. Aperiam ex ut nihil voluptate!
-                  </p>
-                  <a href="#"
-                    ><i class="bx bx-link-external" style="color: #0ef"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="row1 col">
-                <img src="resources/dashboard-design-concept.png" alt="" />
-                <div class="layer">
-                  <h5>DashBoard Admin</h5>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nihil iure fuga autem laboriosam vero dolorum labore beatae
-                    accusantium ad voluptatibus, possimus, nesciunt quibusdam
-                    adipisci minus. Aperiam ex ut nihil voluptate!
-                  </p>
-                  <a href="https://dashboard-c5be7.web.app/"
-                    ><i class="bx bx-link-external" style="color: #0ef"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="row1 col">
-                <img src="resources/e-invoicing-1.png" alt="" />
-                <div class="layer">
-                  <h5>Web Design</h5>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nihil iure fuga autem laboriosam vero dolorum labore beatae
-                    accusantium ad voluptatibus, possimus, nesciunt quibusdam
-                    adipisci minus. Aperiam ex ut nihil voluptate!
-                  </p>
-                  <a href="#"
-                    ><i class="bx bx-link-external" style="color: #0ef"></i
-                  ></a>
-                </div>
+              <div class="flex-sm-510" data-aos="fade-up" data-aos-delay="600">
+                <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                <a href="tel:+201117407260" class="link-custom"
+                  >Call: (+20) 1117407260 / 1118609490</a
+                >
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="contact-text">
-        <h2>Contact <span>Me</span></h2>
-        <h4>Let's Work Together</h4>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-          aliquid expedita? Molestias quibusdam delectus, neque earum aperiam
-          vitae ad modi alias repellat eum mollitia labore nisi deserunt ipsam
-          corporis at.
-        </p>
-        <div class="contact-list">
-          <li><i class="bx bxs-send"></i>yasserabdelfadile.tech@gmail.com</li>
-          <li><i class="bx bxs-phone"></i>01140947476</li>
+      </section>
+      <!-- //HOME -->
+
+      <!-- SERVICES -->
+      <section id="services" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="flip-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">SERVICES</h6>
+              <h1>Services That I Provide</h1>
+            </div>
+          </div>
+
+          <div class="row gy-4">
+            <div class="col-md-4" data-aos="flip-up">
+              <div
+                class="service p-4 bg-base rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between"
+              >
+                <div class="iconbox rounded-4">
+                  <i class="las la-code"></i>
+                </div>
+                <h5 class="mt-4 mb-2">Web Development</h5>
+                <p>
+                  End-to-end web application development using C#, ASP.NET,
+                  Angular, and React.
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="flip-up" data-aos-delay="300">
+              <div
+                class="service p-4 bg-base rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between"
+              >
+                <div class="iconbox rounded-4">
+                  <i class="las la-database"></i>
+                </div>
+                <h5 class="mt-4 mb-2">Database Design</h5>
+                <p>
+                  Design, optimization, and management of complex database
+                  relationships, queries, and stored procedures.
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="flip-up" data-aos-delay="600">
+              <div
+                class="service p-4 bg-base rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between"
+              >
+                <div class="iconbox rounded-4">
+                  <i class="las la-laptop-code"></i>
+                </div>
+                <h5 class="mt-4 mb-2">Web Designing</h5>
+                <p>
+                  Expertise in modern JavaScript frameworks like Angular and
+                  React to deliver highly interactive user interfaces.
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="flip-up" data-aos-delay="600">
+              <div
+                class="service p-4 bg-base rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between"
+              >
+                <div class="iconbox rounded-4">
+                  <i class="las la-file-code"></i>
+                </div>
+                <h5 class="mt-4 mb-2">API Development</h5>
+                <p>
+                  Development of RESTful APIs using ASP.NET. Seamless API
+                  integration with third-party services and systems.
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="flip-up" data-aos-delay="600">
+              <div
+                class="service p-4 bg-base rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between"
+              >
+                <div class="iconbox rounded-4">
+                  <i class="lab la-codepen"></i>
+                </div>
+                <h5 class="mt-4 mb-2">Enterprise Solutions</h5>
+                <p>
+                  Custom software solutions designed to streamline business
+                  operations, improve efficiency, and adapt to evolving industry
+                  requirements.
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="flip-up" data-aos-delay="600">
+              <div
+                class="service p-4 bg-base rounded-4 shadow-effect h-100 d-flex flex-column justify-content-between"
+              >
+                <div class="iconbox rounded-4">
+                  <i class="las la-tools"></i>
+                </div>
+                <h5 class="mt-4 mb-2">System Maintenance</h5>
+                <p>
+                  Providing regular updates, performance monitoring, and
+                  troubleshooting to ensure optimal functionality and security
+                  of your systems.
+                </p>
+                <a href="#" class="link-custom">Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact-icon">
-          <a href="#"><i class="bx bxl-facebook-circle"></i></a>
-          <a href="#"><i class="bx bxl-twitter"></i></a>
-          <a href="#"><i class="bx bxl-instagram"></i></a>
-          <a href="www.linkedin.com/in/yasser-abdelfadile-2a134524a"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
+      </section>
+      <!-- SERVICES -->
+
+      <!-- WORK -->
+      <section id="work" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">WORK</h6>
+              <h1>My Projects</h1>
+            </div>
+          </div>
+
+          <div class="row gy-4">
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    class="rounded-4"
+                    src="./assets/images/e-commerce.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>E-Commerce</h4>
+                  <p>
+                    A robust solution utilizing ASP.NET MVC for the admin panel
+                    and ASP.NET API with Angular for client-side UI, backed by a
+                    SQL Server database for efficient data handling.
+                  </p>
+                  <a
+                    href="https://asus-nine.vercel.app/"
+                    target="_blank"
+                    class="link-custom"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    class="rounded-4"
+                    src="./assets/images/Equipment_managment_Software-768x474.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Equipment System</h4>
+                  <p>
+                    A scalable platform using Asp.NET (C#) for backend
+                    operations, Angular for a dynamic user interface, and SQL
+                    Server to ensure seamless database integration.
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    class="rounded-4"
+                    src="./assets/images/e-invoice.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>E-Invoice System</h4>
+                  <p>
+                    Crafted with ASP.NET and C# for backend processing, enhanced
+                    by HTML, CSS, and JavaScript for a responsive UI, leveraging
+                    an SQL Server database for data management.
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                  <img
+                    class="rounded-4"
+                    src="./assets/images/CAFE-9-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>POS System</h4>
+                  <p>
+                    Designed for a pharmaceuticals company, combining Asp.NET
+                    and C# for backend logic with a Angular front-end, and
+                    powered by SQL Lit for reliable data storage.
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="contact-form">
-        <form action="">
-          <input type="text" placeholder="Enter Your Name" required />
-          <input type="email" placeholder="Enter Your Email" required />
-          <textarea
-            name=""
-            id=""
-            cols="40"
-            rows="10"
-            placeholder="Enter Your Message"
-            required
-          ></textarea>
-          <input type="submit" value="submit" class="send" />
-        </form>
-      </div>
-    </section>
-    <footer>
-      <div class="last-text">
-        <p>developed with love by Yasser ELsayed &#169; 2024</p>
-      </div>
-      <a href="#" class="top read" id="top"
-        ><i class="bx bx-up-arrow-alt"></i
-      ></a>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
+      </section>
+      <!-- //WORK -->
+
+      <!-- ABOUT -->
+      <section id="about" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">ABOUT</h6>
+              <h1>My Education & Experiance</h1>
+            </div>
+          </div>
+
+          <div class="row gy-5">
+            <div class="col-lg-6">
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">
+                Education
+              </h3>
+              <div class="row gy-4">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Full-Stack Web Development ICC</h4>
+                    <p class="text-brand mb-2">
+                      Information Technology Institute - ITI (2024 - 2025)
+                    </p>
+                    <p class="mb-0">
+                      Intensive Code Camp for Full-Stack web development using
+                      .NET.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Bachelors' of science</h4>
+                    <p class="text-brand mb-2">
+                      Sohag University, Egypt (2016 - 2020)
+                    </p>
+                    <p class="mb-0">
+                      Bachelor's Degree in Science, Special Computer Science
+                      Department.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">
+                Experiance
+              </h3>
+              <div class="row gy-4">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Junior Full stack Developer</h4>
+                    <p class="text-brand mb-2">
+                      AL SHAHIN Company (2022 - 2023)
+                    </p>
+                    <p class="mb-0">
+                      Full time at AL SHAHIN Company for import & distribution
+                      as Junior Full stack.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Back-End Developer</h4>
+                    <p class="text-brand mb-2">Upwork (2024 - Present)</p>
+                    <p class="mb-0">
+                      Part time Back-End web developer and Database Engineer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <!-- <section id="contact" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8 pb-4" data-aos="fade-up">
+              <h6 class="text-brand">CONTACT</h6>
+              <h1>Interested in working together? Let's talk</h1>
+            </div>
+
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+              <form action="#" class="row g-lg-3 gy-3">
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="form-group col-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter subject"
+                  />
+                </div>
+                <div class="form-group col-12">
+                  <textarea
+                    name=""
+                    rows="4"
+                    class="form-control"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+                <div class="form-group col-12 d-grid">
+                  <a type="submit" class="btn btn-brand" href="mailto:yasserabdelfadile.tech@gmail.com" >
+                    Contact me
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section id="contact" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8 pb-4" data-aos="fade-up">
+              <h6 class="text-brand">CONTACT</h6>
+              <h1>Interested in working together? Let's talk</h1>
+            </div>
+
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+              <form id="contact-form" class="row g-lg-3 gy-3">
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="form-group col-12">
+                  <input
+                    type="text"
+                    id="subject"
+                    class="form-control"
+                    placeholder="Enter subject"
+                    required
+                  />
+                </div>
+                <div class="form-group col-12">
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="form-control"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-group col-12 d-grid">
+                  <button type="submit" class="btn btn-brand">
+                    Contact me
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- //CONTACT -->
+
+      <!-- FOOTER -->
+      <footer class="py-5 px-lg-5">
+        <div class="container">
+          <div class="row gy-4 justify-content-between">
+            <div class="col-auto">
+              <p class="mb-0">
+                &copy; Designed by
+                <a href="#" class="fw-bold">Yasser Abd El-Fadile</a>
+              </p>
+            </div>
+            <div class="col-auto">
+              <div class="social-icons">
+                <a
+                  target="_blank"
+                  href="https://www.upwork.com/freelancers/~017f889b3221691471"
+                  ><i class="las la-globe"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/yasser-abdelfadile"
+                  ><i class="lab la-linkedin"></i
+                ></a>
+                <a target="_blank" href="https://github.com/yasserabdelfadile"
+                  ><i class="lab la-github"></i
+                ></a>
+                <a
+                  target="_blank"
+                  href="mailto:yasserabdelfadile.tech@gmail.com"
+                  ><i class="las la-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- //FOOTER -->
+    </div>
+    <!-- //CONTENT WRAPPER -->
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
-<!-- 2HUMN4LW3ZFUA2OI -->
